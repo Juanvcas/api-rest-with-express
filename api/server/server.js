@@ -10,7 +10,7 @@ const router = (app) => {
   v1.use('/categories', categoriesRouter);
   v1.use('/users', usersRouter);
 
-  app.use('/v1', v1);
+  app.use('/api/v1', v1);
 };
 
 export default router;
