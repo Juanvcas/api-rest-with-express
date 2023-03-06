@@ -7,12 +7,11 @@ import {
 } from './middlewares/errors.handler.js';
 
 const app = express();
-const port = 3000;
 
 app.use(express.json());
 app.use(cors());
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   res.send('Hello, this is an API made with Express.js');
 });
 
@@ -21,4 +20,6 @@ router(app);
 app.use(boomErrorHandler);
 app.use(errorHandler);
 
-app.listen(port);
+app.listen(3002);
+
+export default app;

@@ -2,11 +2,11 @@
   "name": "express_yard-sale-store",
   "version": "1.0.0",
   "description": "This is the express course's practice project from Platzi.",
-  "main": "index.js",
+  "main": "api/index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon -L index.js",
-    "start": "node index.js",
+    "dev": "nodemon -L api/index.js",
+    "start": "node api/index.js",
     "lint": "eslint"
   },
   "keywords": [
